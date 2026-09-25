@@ -12,7 +12,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 > and **~0.65 GFLOPs** at inference.
 
 <p align="center">
-  <img src="figures/ViT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
+  <img src="figures/VIT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
 </p>
 <p align="center"><em>Fig. 1 — Stage 1: self-supervised pre-training with 75% random spatial masking and the Gated ViT encoder.</em></p>
 
