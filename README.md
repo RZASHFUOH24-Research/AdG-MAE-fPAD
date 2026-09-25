@@ -12,7 +12,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 > and **~0.65 GFLOPs** at inference.
 
 <p align="center">
-  <img src="assets/ViT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
+  <img src="figures/ViT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
 </p>
 <p align="center"><em>Fig. 1 — Stage 1: self-supervised pre-training with 75% random spatial masking and the Gated ViT encoder.</em></p>
 
@@ -126,8 +126,8 @@ images. Saves a checkpoint every epoch (plus an always-current `latest.pth`) and
 sample reconstruction plot to `PRETRAIN_SAVE_DIR`. Automatically resumes if interrupted.
 
 <p align="center">
-  <img src="assets/Alpha.jpg" width="450" alt="Evolution of the AGS gate alpha">
-  <img src="assets/loss.jpg" width="450" alt="Reconstruction loss convergence">
+  <img src="figures/Alpha.jpg" width="450" alt="Evolution of the AGS gate alpha">
+  <img src="figures/loss.jpg" width="450" alt="Reconstruction loss convergence">
 </p>
 <p align="center"><em>Fig. 4/5 — The gate α grows from ~0.05 to ~1.22 over training (left); AdG-MAE converges to a lower, smoother reconstruction loss than a fixed-α ViT baseline (right).</em></p>
 
@@ -143,7 +143,7 @@ differential learning rates and Spectral Re-weighting Augmentation. Reports HTER
 APCER / BPCER on the validation and test sets after every epoch.
 
 <p align="center">
-  <img src="assets/ft4.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
+  <img src="figures/ft4.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
 </p>
 <p align="center"><em>Fig. 3 — Stage 2: fine-tuning with Spectral Re-weighting Augmentation (SRA) and SAM.</em></p>
 
@@ -205,11 +205,3 @@ If you use this code, please cite our paper:
 }
 ```
 
-## License
-
-This project is released under the MIT License (see `LICENSE`).
-
-## Contact
-
-For questions, please contact Mohammadreza.Sheikhfathollahi@hud.ac.uk or open an issue in
-this repository.
