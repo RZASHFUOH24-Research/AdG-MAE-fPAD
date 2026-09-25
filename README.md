@@ -29,7 +29,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 - **Lightweight**: ~2.5M parameters, ~0.65 GFLOPs — far below comparable SOTA methods.
 
 <p align="center">
-  <img src="assets/Gate1.jpg" width="500" alt="Adaptive Gated Self-Attention block">
+  <img src="figures/Gate1.jpg" width="500" alt="Adaptive Gated Self-Attention block">
 </p>
 <p align="center"><em>Fig. 2 — Standard ViT block (a) vs. our Adaptive Gated Self-Attention block (b).</em></p>
 
@@ -48,8 +48,7 @@ AdG-MAE/
 ├── pretrain.py                  # Stage 1 entry point: python pretrain.py
 ├── finetune.py                   # Stage 2 entry point: python finetune.py
 ├── requirements.txt
-├── assets/                        # Figures used in this README (add paper figures here)
-└── results/                        # Checkpoints & sample reconstructions (gitignored)
+└── figures/                        # Figures used in this README (add paper figures here)
 ```
 
 ## Installation
@@ -163,13 +162,13 @@ Model complexity: **~2.5M parameters**, **~0.65 GFLOPs** — less than half the 
 cost of comparable SOTA methods (see paper Table "Comparison of model complexity").
 
 <p align="center">
-  <img src="assets/tSNE1.jpg" width="420" alt="t-SNE feature distribution">
-  <img src="assets/Sensivity3.jpg" width="420" alt="Frequency sensitivity maps">
+  <img src="figures/tSNE1.jpg" width="420" alt="t-SNE feature distribution">
+  <img src="figures/Sensivity3.jpg" width="420" alt="Frequency sensitivity maps">
 </p>
 <p align="center"><em>Fig. 7/8 — t-SNE feature alignment on the unseen target domain (left) and frequency-sensitivity maps showing SRA sharpening the model's focus on high-frequency spoofing texture (right).</em></p>
 
 <p align="center">
-  <img src="assets/Optimiser.jpg" width="850" alt="SRA hyperparameter and optimiser ablation">
+  <img src="figures/Optimiser.jpg" width="850" alt="SRA hyperparameter and optimiser ablation">
 </p>
 <p align="center"><em>Fig. 6 — Grid search over SRA weights (ω_low, ω_high) and optimiser choice (AdamW vs. SAM); the global optimum is ω_low=0.75, ω_high=1.5 with SAM.</em></p>
 
