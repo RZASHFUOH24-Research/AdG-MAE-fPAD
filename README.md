@@ -12,7 +12,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 > and **~0.65 GFLOPs** at inference.
 
 <p align="center">
-  <img src="figures/VIT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
+  <img src="figures/VIT.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
 </p>
 <p align="center"><em>Fig. 1 — Stage 1: self-supervised pre-training with 75% random spatial masking and the Gated ViT encoder.</em></p>
 
@@ -29,7 +29,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 - **Lightweight**: ~2.5M parameters, ~0.65 GFLOPs — far below comparable SOTA methods.
 
 <p align="center">
-  <img src="figures/Gate1.jpg" width="500" alt="Adaptive Gated Self-Attention block">
+  <img src="figures/Gate.jpg" width="500" alt="Adaptive Gated Self-Attention block">
 </p>
 <p align="center"><em>Fig. 2 — Standard ViT block (a) vs. our Adaptive Gated Self-Attention block (b).</em></p>
 
@@ -142,7 +142,7 @@ differential learning rates and Spectral Re-weighting Augmentation. Reports HTER
 APCER / BPCER on the validation and test sets after every epoch.
 
 <p align="center">
-  <img src="figures/ft4.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
+  <img src="figures/ft.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
 </p>
 <p align="center"><em>Fig. 3 — Stage 2: fine-tuning with Spectral Re-weighting Augmentation (SRA) and SAM.</em></p>
 
