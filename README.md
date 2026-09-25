@@ -199,7 +199,7 @@ If you use this code, please cite our paper:
 @article{sheikhfathollahi2026adgmae,
   title   = {AdG-MAE: Adaptive Gated Masked Autoencoder for Domain-Generalised Face Anti-Spoofing},
   author  = {Sheikhfathollahi, Mohammadreza and Parkinson, Simon and Khan, Saad},
-  journal = {<add published journal / conference and year here>},
+  journal = {IEEE Transactions on Biometrics, Behavior, and Identity Science},
   year    = {2026}
 }
 ```
