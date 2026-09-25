@@ -12,7 +12,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 > and **~0.65 GFLOPs** at inference.
 
 <p align="center">
-  <img src="figures/ViT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
+  <img src="assets/ViT1.jpg" width="850" alt="Stage 1: Gated MAE pre-training overview">
 </p>
 <p align="center"><em>Fig. 1 — Stage 1: self-supervised pre-training with 75% random spatial masking and the Gated ViT encoder.</em></p>
 
@@ -29,7 +29,7 @@ Official implementation of **"AdG-MAE: Adaptive Gated Masked Autoencoder for Dom
 - **Lightweight**: ~2.5M parameters, ~0.65 GFLOPs — far below comparable SOTA methods.
 
 <p align="center">
-  <img src="figures/Gate1.jpg" width="500" alt="Adaptive Gated Self-Attention block">
+  <img src="assets/Gate1.jpg" width="500" alt="Adaptive Gated Self-Attention block">
 </p>
 <p align="center"><em>Fig. 2 — Standard ViT block (a) vs. our Adaptive Gated Self-Attention block (b).</em></p>
 
@@ -48,7 +48,8 @@ AdG-MAE/
 ├── pretrain.py                  # Stage 1 entry point: python pretrain.py
 ├── finetune.py                   # Stage 2 entry point: python finetune.py
 ├── requirements.txt
-└── figures/                        # Figures used in this README (add paper figures here)
+├── assets/                        # Figures used in this README (add paper figures here)
+└── results/                        # Checkpoints & sample reconstructions (gitignored)
 ```
 
 ## Installation
@@ -125,8 +126,8 @@ images. Saves a checkpoint every epoch (plus an always-current `latest.pth`) and
 sample reconstruction plot to `PRETRAIN_SAVE_DIR`. Automatically resumes if interrupted.
 
 <p align="center">
-  <img src="figures/Alpha.jpg" width="450" alt="Evolution of the AGS gate alpha">
-  <img src="figures/loss.jpg" width="450" alt="Reconstruction loss convergence">
+  <img src="assets/Alpha.jpg" width="450" alt="Evolution of the AGS gate alpha">
+  <img src="assets/loss.jpg" width="450" alt="Reconstruction loss convergence">
 </p>
 <p align="center"><em>Fig. 4/5 — The gate α grows from ~0.05 to ~1.22 over training (left); AdG-MAE converges to a lower, smoother reconstruction loss than a fixed-α ViT baseline (right).</em></p>
 
@@ -142,7 +143,7 @@ differential learning rates and Spectral Re-weighting Augmentation. Reports HTER
 APCER / BPCER on the validation and test sets after every epoch.
 
 <p align="center">
-  <img src="figures/ft4.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
+  <img src="assets/ft4.jpg" width="850" alt="Stage 2 fine-tuning overview with SRA and SAM">
 </p>
 <p align="center"><em>Fig. 3 — Stage 2: fine-tuning with Spectral Re-weighting Augmentation (SRA) and SAM.</em></p>
 
@@ -162,13 +163,13 @@ Model complexity: **~2.5M parameters**, **~0.65 GFLOPs** — less than half the 
 cost of comparable SOTA methods (see paper Table "Comparison of model complexity").
 
 <p align="center">
-  <img src="figures/tSNE1.jpg" width="420" alt="t-SNE feature distribution">
-  <img src="figures/Sensivity3.jpg" width="420" alt="Frequency sensitivity maps">
+  <img src="assets/tSNE1.jpg" width="420" alt="t-SNE feature distribution">
+  <img src="assets/Sensivity3.jpg" width="420" alt="Frequency sensitivity maps">
 </p>
 <p align="center"><em>Fig. 7/8 — t-SNE feature alignment on the unseen target domain (left) and frequency-sensitivity maps showing SRA sharpening the model's focus on high-frequency spoofing texture (right).</em></p>
 
 <p align="center">
-  <img src="figures/Optimiser.jpg" width="850" alt="SRA hyperparameter and optimiser ablation">
+  <img src="assets/Optimiser.jpg" width="850" alt="SRA hyperparameter and optimiser ablation">
 </p>
 <p align="center"><em>Fig. 6 — Grid search over SRA weights (ω_low, ω_high) and optimiser choice (AdamW vs. SAM); the global optimum is ω_low=0.75, ω_high=1.5 with SAM.</em></p>
 
@@ -204,3 +205,11 @@ If you use this code, please cite our paper:
 }
 ```
 
+## License
+
+This project is released under the MIT License (see `LICENSE`).
+
+## Contact
+
+For questions, please contact Mohammadreza.Sheikhfathollahi@hud.ac.uk or open an issue in
+this repository.
