@@ -48,8 +48,7 @@ AdG-MAE/
 ├── pretrain.py                  # Stage 1 entry point: python pretrain.py
 ├── finetune.py                   # Stage 2 entry point: python finetune.py
 ├── requirements.txt
-├── assets/                        # Figures used in this README (add paper figures here)
-└── results/                        # Checkpoints & sample reconstructions (gitignored)
+└── figures/                        # Figures used in this README (add paper figures here)
 ```
 
 ## Installation
