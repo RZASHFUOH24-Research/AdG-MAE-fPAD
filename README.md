@@ -162,8 +162,8 @@ Model complexity: **~2.5M parameters**, **~0.65 GFLOPs** — less than half the 
 cost of comparable SOTA methods (see paper Table "Comparison of model complexity").
 
 <p align="center">
-  <img src="figures/tSNE1.jpg" width="420" alt="t-SNE feature distribution">
-  <img src="figures/Sensivity3.jpg" width="420" alt="Frequency sensitivity maps">
+  <img src="figures/tSNE.jpg" width="420" alt="t-SNE feature distribution">
+  <img src="figures/Sensivity.jpg" width="420" alt="Frequency sensitivity maps">
 </p>
 <p align="center"><em>Fig. 7/8 — t-SNE feature alignment on the unseen target domain (left) and frequency-sensitivity maps showing SRA sharpening the model's focus on high-frequency spoofing texture (right).</em></p>
 
